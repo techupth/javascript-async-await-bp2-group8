@@ -1,6 +1,7 @@
 //Exercise #1
 
 let getJohnProfile = () => {
+  //return fetch ("https//.......")
   return new Promise(function (resolve) {
     setTimeout(
       () =>
@@ -13,4 +14,9 @@ let getJohnProfile = () => {
     );
   });
 };
+
 // Start coding here
+function displayJohnProfile(result){
+  console.log(result);
+}
+getJohnProfile().then(displayJohnProfile);

@@ -11,5 +11,14 @@ let getJohnProfile = () => {
     );
   });
 };
-
 // Start coding here
+function displayJohnProfile(result){
+  console.log(result);
+};
+
+function ifRejected(result){
+  console.log(result);
+};
+
+getJohnProfile().then(displayJohnProfile).catch(ifRejected);
+
